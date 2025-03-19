@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Advanced form validation (js)</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <hr>
+        <div class="inner-con">
+            <form action="" id="form">
+                <div class="form-group">
+                    <label for="name">Full Name</label><br>
+                    <input type="text" placeholder="Enter your full name" id="name">
+                    <span class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label><br>
+                    <input type="text" placeholder="Enter your email address" id="email">
+                    <span class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="number" class="lbl">Contact Nummber</label><br>
+                    <input type="tel" placeholder="Enter your Contact Nummber" id="number">
+                    <span class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="pass-container">
+                        <input type="password" placeholder="Create a new password" id="password">
+                        <button type="button" class="password-design" button id="togglepass">👁️</button>
+                    </div>
+                    <span class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Confirmpassword">Confirm Password</label>
+                    <div class="pass-container">
+                        <input type="password" placeholder="Confirm your password" id="Confirmpassword">
+                        <button type="button" class="password-design" id="togglepassconfo">👁️</button>
+                    </div>
+                    <span class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label><br>
+                    <input type="text" placeholder="Enter your city" id="city">
+                    <span class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label><br>
+                    <input type="text" placeholder="Enter your country" id="country">
+                    <span class="error"></span>
+                </div>
+                <div class="submit-btn">
+                    <button type="submit" class="register-btn">Register</button>
+                </div>
+                <p id="sucessmessage" class="sucess"></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
